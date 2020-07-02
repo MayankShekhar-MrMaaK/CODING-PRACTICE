@@ -15,3 +15,4 @@ for i in range(1,n+1):
 
 print(k)
 print(k[n-1][n]) 
+#demo file

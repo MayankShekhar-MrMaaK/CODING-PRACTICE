@@ -13,3 +13,7 @@ from deletemiddleelementstack import *
 
 print("\n\n")
 from reversestackrecursion import *
+
+
+print("\n\n")
+from towerofhanoi import *
