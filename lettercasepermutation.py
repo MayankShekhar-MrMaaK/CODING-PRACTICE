@@ -16,7 +16,7 @@ per("a1B2","",s)
 print(s)
 
 '''
-OUTPUT:
+OUTPUT:-
 A1b2
 a1B2
 A1B2
