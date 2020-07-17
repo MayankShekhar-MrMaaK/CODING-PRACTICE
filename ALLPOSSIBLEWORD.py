@@ -33,14 +33,13 @@ d
 
 rst=[]
 def possible(curr):
-    if len(curr)==k:
-        rst.append(curr)
-        return
-    for i in aset:
-        possible(curr+i)
+  if len(curr)==k:
+    rst.append(curr)
+    return
+  for i in aset:
+    possible(curr+i)
         
 aset={'a','b','c'}
 k=3
 possible("")
 print(rst)
-
