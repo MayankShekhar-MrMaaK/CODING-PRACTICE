@@ -1,17 +1,19 @@
-def reverses(arr,n):
-  if n==1:
+def reverse(arr):
+  if len(arr)==1:
     return
+  l=arr.pop(len(arr)-1)
+  reverse(arr)
+  insert(arr,l)
 
-  reverses(arr,n-1)
-  last=arr[n-1]
-  j=n-2
-
-  while j>=0:
-    arr[j+1]=arr[j]
-    j-=1
-  arr[j+1]=last
+def insert(arr, element):
+  if len(arr)==0:
+    arr.append(element)
+    return
+  p=arr.pop(len(arr)-1)
+  insert(arr,element)
+  arr.append(p)
 
 arr=[1,2,3,4,5]
 print("orignal array-->{}".format(arr))
-reverses(arr, len(arr))
+reverse(arr)
 print("reversed array-->{}".format(arr))
