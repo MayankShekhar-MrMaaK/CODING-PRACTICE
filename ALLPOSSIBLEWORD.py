@@ -38,7 +38,8 @@ def possible(curr):
     return
   for i in aset:
     possible(curr+i)
-        
+
+
 aset={'a','b','c'}
 k=3
 possible("")
