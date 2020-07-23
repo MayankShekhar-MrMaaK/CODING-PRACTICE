@@ -40,7 +40,7 @@ def possible(curr):
     possible(curr+i)
 
 
-aset={'a','b','c'}
-k=3
+aset={'1','2'}
+k=4
 possible("")
 print(rst)

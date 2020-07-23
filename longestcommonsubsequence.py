@@ -6,6 +6,7 @@ def sub(x,y,m,n):
   #memorization
   if t[m][n]!=-1:
     return t[m][n]
+
   #CHOICE DIAGRAM
   if x[m-1]==y[n-1]:
     t[m][n]= 1+ sub(x,y,m-1,n-1)

@@ -1,25 +1,10 @@
-def coin(arr,s):
-  n=len(arr)
 
-  k=[[0 for i in range(s+1)] for j in range(n+1)]
+def stair(n):
+	if n<=1:
+		return n
+	 
+	ways= stair(n-1) + stair(n-2)
+	return ways
 
-  for i in range(1,s+1):
-    k[0][i]=0
-  for i in range(n+1):
-    k[i][0]=1
-
-  for i in range(1,n+1):
-    for j in range(1,s+1):
-      if arr[i-1]> j:
-        k[i][j]=k[i-1][j]
-      else:
-        k[i][j]= k[i][j-arr[i-1]] + k[i-1][j]
-  
-  return k[n][s]
-
-arr=[2,5,7,8]
-s=5
-if s<0:
-  print("NOT POSSIBLE")
-else:
-  print("There are {} max ways to get sum= {} from coins={}".format(coin(arr,s),s,arr))
+n=4
+print(stair(n+1))
