@@ -4,7 +4,7 @@ from TARGET_SUM import *'''
 
 
 print("\n\n")
-from largestcontigoussum import *
+from tripletsum import *
 
 print("\n\n")
 from leadersarray import *
