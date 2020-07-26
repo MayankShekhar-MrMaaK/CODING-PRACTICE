@@ -4,7 +4,7 @@ from TARGET_SUM import *'''
 
 
 print("\n\n")
-from tripletgivensum import *
+from subaaraywithgivensum import *
 
 
 print("\n\n")
