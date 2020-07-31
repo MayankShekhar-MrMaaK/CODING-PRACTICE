@@ -1,6 +1,7 @@
 def activate(arr):
 
 
+
 	n=len(arr)
 	i=0
 	while(i<=n-1):
