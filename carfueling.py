@@ -10,3 +10,4 @@ def compute_min_refills(distance, tank, stops):
 			count+=1
 	return count
 print(compute_min_refills(200,250,[100,150]))
+
