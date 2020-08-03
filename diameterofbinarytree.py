@@ -21,8 +21,8 @@ class Solution:
             l = solve(root.left, res)
             r = solve(root.right, res)
             
-            temp= 1+ max(l,r)
-            ans = max(temp, 1+l+r)
+            temp= 1+ max(l,r) #PASS ABOVE
+            ans = max(temp, 1+l+r) #INCLUDE IN ANS
             res[0] = max(res[0], ans)
             
             return temp
