@@ -4,7 +4,7 @@ from TARGET_SUM import *'''
 
 
 print("\n\n")
-from demo import *
+from pow import *
 
 
 print("\n\n")
