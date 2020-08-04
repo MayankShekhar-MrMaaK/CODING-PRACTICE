@@ -4,7 +4,7 @@ from TARGET_SUM import *'''
 
 
 print("\n\n")
-from binarytreemaxpathsumleaves import *
+from demo import *
 
 
 print("\n\n")
