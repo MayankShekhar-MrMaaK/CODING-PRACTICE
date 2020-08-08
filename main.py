@@ -4,11 +4,11 @@ from TARGET_SUM import *'''
 
 
 print("\n\n")
-from pow import *
+from preorder import *
 
 
 print("\n\n")
-from subset import *
+from postorder import *
 
 print("\n\n")
 from counttriplet import *
