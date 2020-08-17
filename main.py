@@ -4,14 +4,11 @@ from TARGET_SUM import *'''
 
 
 print("\n\n")
-from preorder import *
+from nextgreaterelement import *
 
 
 print("\n\n")
 from postorder import *
 
 print("\n\n")
-from counttriplet import *
-
-print("\n\n")
-from leadersarray import *
+from inorder2 import *
