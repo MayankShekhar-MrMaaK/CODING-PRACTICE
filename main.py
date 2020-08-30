@@ -4,7 +4,7 @@ from TARGET_SUM import *'''
 
 
 print("\n\n")
-from nextgreaterelement import *
+from a import *
 
 
 print("\n\n")
