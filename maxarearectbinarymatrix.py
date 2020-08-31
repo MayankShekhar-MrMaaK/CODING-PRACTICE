@@ -37,17 +37,19 @@ def mah(arr):
 		out[i]=(right[i]-left[i]-1)*arr[i]
 	return max(out)
 
-matrix=[[0,1,1,0],[1,1,1,1],[1,1,1,1],[1,1,0,0]]
-maz=[]
-for u in matrix[0]:
-	maz.append(u)
-maxi=mah(maz)
-for i in range(1,len(matrix)):
-	for j in range(len(matrix[i])):
-		if matrix[i][j]==0:
-			maz[j]=0
-		else:
-			maz[j]=maz[j]+matrix[i][j]
-	maxi=max(maxi, mah(maz))
+def MaxAreaRectangleinbinarymatrix(matrix):
+	maz=[]
+	for u in matrix[0]:
+		maz.append(u)
+	maxi=mah(maz)
+	for i in range(1,len(matrix)):
+		for j in range(len(matrix[i])):
+			if matrix[i][j]==0:
+				maz[j]=0
+			else:
+				maz[j]=maz[j]+matrix[i][j]
+		maxi=max(maxi, mah(maz))
+	return maxi
 
-print(maxi)
+matrix=[[0,1,1,0],[1,1,1,1],[1,1,1,1],[1,1,0,0]]
+print(MaxAreaRectangleinbinarymatrix(matrix))

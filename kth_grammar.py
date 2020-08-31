@@ -1,3 +1,5 @@
+from functools import lru_cache
+@lru_cache(100)
 def grammar(n,k):
   if n==1 or k==1:
     return 0
