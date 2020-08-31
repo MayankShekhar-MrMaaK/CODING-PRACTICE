@@ -1,5 +1,5 @@
 stack=[]# storing index value
-nums=[13,7,6,12,10]
+nums=[1,3,0,0,1,2,4]
 stack.append(0)
 out=[0 for i in range(len(nums))]
 
