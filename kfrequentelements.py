@@ -7,16 +7,21 @@ for i in arr:
 				freq[i]+=1
 		else:
 				freq[i]=1
+
 arr=[]
 for x,y in freq.items():
 		arr.append([y,x])
+
 heap = []
+heapq.heapify(heap)
 for i in range(len(arr)):
 	heapq.heappush(heap,arr[i])
-	if len(heap)>k:
-		heapq.heappop(heap)
+
 res = []
-for i in range(k):
-	res.append(heapq.heappop(heap)[1])
-print(res)
+res.append([y for x, y in heapq.nlargest(k, heap)])
+
+out=[]
+out=res.pop()
+print(out)
+
 print("dhd;")

@@ -12,6 +12,7 @@ res = []
 print(heap)
 
 res.append([y for x, y in heapq.nsmallest(K, heap)])
+
 out=[]
 out=res.pop()
 print(out)
