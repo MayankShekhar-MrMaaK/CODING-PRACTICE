@@ -1,23 +1,12 @@
-stack=[]
-k=2
-arr=[3,1,2,4]
-for i in arr:
-	if len(stack)==0:
-		stack.append(i)
-		print(stack)
-		continue
-	elif len(stack)>0 and stack[-1]>i:
-		stack.append(i)
-		print(stack)
+import heapq
+def findKthLargest(nums, k):
+	heap = []
+	for i in range(len(nums)):
+		heapq.heappush(heap,nums[i])
+		if len(heap)>k:
+			heapq.heappop(heap)
 
-	elif len(stack)>0 and stack[-1]<i:
-		stack=[i]+stack
-		print(stack)
-		
-	if len(stack)>k:
-		temp=min(stack)
-		stack.remove(temp)
+	print(heap)
+	return heap[0]
 
-print(min(stack))
-print(stack)
-#min heap
+print(findKthLargest([3,1,2,4],2))

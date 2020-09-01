@@ -1,17 +1,12 @@
-stack=[]
-k=4
-arr=[7,10,4,3,20,15]
-for i in arr:
-	if len(stack)==0:
-		stack.append(i)
-		continue
-	elif len(stack)>0 and stack[-1]<i:
-		stack.append(i)
-	elif len(stack)>0 and stack[-1]>i:
-		stack=[i]+stack
-	if len(stack)>k:
-			stack.pop()
+import heapq
+def findsthLargest(nums, k):
+	heap = []
+	heapq.heapify(heap)
+	for i in range(len(nums)):
+		heapq.heappush(heap,nums[i])
+	print(heap)
+	res=[]
+	res.append([y for y in heapq.nsmallest(k, heap)])
+	return res[-1]
 
-print(stack[-1])
-print(stack)
-#max heap
+print(findsthLargest([5,2,3,1,9],4))
