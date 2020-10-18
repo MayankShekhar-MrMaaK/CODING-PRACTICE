@@ -2,7 +2,7 @@
 print("\n\n")
 from TARGET_SUM import *'''
 print("\n\n")
-from kfrequentelements import *
+from dutch import *
 
 print("\n\nsmallest")
 from kthsmallest import *
